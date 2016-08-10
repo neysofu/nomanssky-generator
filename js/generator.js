@@ -623,6 +623,7 @@ function nextName() {
         last = weightedRand(table[last]);
         name = name + last;
     }
+    this.value = name;
     return name;
 }
 
