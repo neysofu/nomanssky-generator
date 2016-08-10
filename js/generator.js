@@ -1,4 +1,4 @@
-var tab = {
+var table = {
  'a': {'a': 6536,
        'b': 22670,
        'c': 40320,
@@ -606,10 +606,7 @@ var tab = {
 function weightedRand(spec) {
     var i, j, table=[];
     for (i in spec) {
-           // The constant 10 below should be computed based on the
-           // weights in the spec for a correct and optimal table size.
-           // E.g. the spec {0:0.999, 1:0.001} will break this impl.
-        for (j=0; j<spec[i]*10; j++) {
+        for (j=0; j<spec[i]*.5; j++) {
             table.push(i);
         }
     }
@@ -623,7 +620,7 @@ function nextName() {
         last = weightedRand(table[last]);
         name = name + last;
     }
-    this.value = name;
+    document.getElementById("ShowButton").textContent = name;
     return name;
 }
 
