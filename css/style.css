@@ -1,25 +1,18 @@
-/*!
- * Milligram v1.1.0
- * http://milligram.github.io
- *
- * Copyright (c) 2016 CJ Patoilo
- * Licensed under the MIT license
-*/
-
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  text-align: center;
-  background-color: #f8f8f8;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-align: center;
+    background-color: #f8f8f8;
 }
 
 body {
-  color: #6c6c6c;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.6em;
-  font-weight: 300;
-  letter-spacing: .01em;
-  line-height: 1.6;
+    width: 100%;
+    margin: 0;
+    color: #6c6c6c;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 *,
@@ -29,109 +22,34 @@ body {
 }
 
 button {
-  background-color: transparent;
-  color: #444;
-  border: .1rem solid #a7353d;
-  border-radius: .4rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.6rem;
-  font-weight: 300;
-  padding: 0 8rem;
-  line-height: 3.8rem;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-button:hover,
-button:focus, {
-  background-color: #606c76;
-  border-color: #606c76;
-  color: #fff;
-  outline: 0;
+    background-color: transparent;
+    border: .1rem solid #a7353d;
+    border-radius: .4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 0 8rem;
+    line-height: 3.8rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-top: 20%;
 }
 
 hr {
-  border: 0;
-  border-top: 0.1rem solid #ccc;
-  margin-bottom: 3.5rem;
-  margin-top: 3.0rem;
+    border: 0;
+    height: .1rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 a {
-  color: #9b4dca;
-  text-decoration: none;
+    color: #a7353d;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #606c76;
-}
-
-dl,
-ol,
-ul {
-  margin-top: 0;
-  padding-left: 0;
-}
-
-dl dl,
-dl ul,
-dl ol,
-ol dl,
-ol ul,
-ol ol,
-ul dl,
-ul ul,
-ul ol {
-  font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3.0rem;
-}
-
-dl {
-  list-style: none;
-}
-
-ul {
-  list-style: circle inside;
-}
-
-ol {
-  list-style: decimal inside;
-}
-
-dt,
-dd,
-li {
-  margin-bottom: 1.0rem;
-}
-
-.button,
-button {
-  margin-bottom: 1.0rem;
-}
-
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem;
-}
-
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem;
-}
-
-p {
-  margin-top: 0;
+    text-decoration: underline;
 }
 
 h1,
@@ -202,6 +120,59 @@ h6 {
   }
 }
 
-img {
-  max-width: 100%;
+.content {
+    display: inline;
+}
+
+.content div {
+    margin-top: 1%;
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.content .text {
+    text-align: left;
+    float: right:
+    margin: 0 20%;
+    max-width: 60%;
+    padding-right: 5%;
+}
+
+.black {
+    color: black;
+}
+
+
+.footer {
+    font-weight: 300;
+    padding: 0 3rem;
+    position: fixed;
+    text-align: left;
+    float: left;
+    line-height: 8rem;
+    height: 7.2rem;
+    background-color: #1b1b1b;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer * {
+    display: inline;
+}
+
+.footer div {
+    margin: 0 3rem;
+    line-height: 7.2rem;
+    position: absolute;
+}
+
+
+@media (max-width: 40rem) {
+  content {
+    display: block;
+  }
+  content div {
+    float: top;
+  }
 }

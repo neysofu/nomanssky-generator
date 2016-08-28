@@ -620,8 +620,18 @@ function nextName() {
         last = weightedRand(table[last]);
         name = name + last;
     }
+    name += '—' + randomInt()
     document.getElementById("ShowButton").textContent = name;
     return name;
+}
+
+function randomInt() {
+    var nums = '0123456789';
+    var code = '';
+    for (j=0; j<3; j++) {
+        code += nums[Math.floor(Math.random() * nums.length)];
+    }
+    return code;
 }
 
 function pickRandomProperty(obj) {
